@@ -1,13 +1,13 @@
-/* ==================== GOOGLE FONTS ====================*/
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-/*==================== VARIABLES CSS ====================*/
+
 :root {
   --header-height: 3rem;
 
-  /*========== Colors ==========*/
-  /* Change favorite color */
-  --hue-color: 190; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+  
+  
+  --hue-color: 190; 
 
   /* HSL color mode */
   --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -23,10 +23,10 @@
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
-  /*========== Font and typography ==========*/
+  
   --body-font: "Poppins", sans-serif;
 
-  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+ 
   --big-font-size: 2rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -35,12 +35,11 @@
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
 
-  /*========== Font weight ==========*/
+  
   --font-medium: 500;
   --font-semi-bold: 600;
 
-  /*========== Margenes Bottom ==========*/
-  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+  
   --mb-0-25: 0.25rem;
   --mb-0-5: 0.5rem;
   --mb-0-75: 0.75rem;
@@ -50,13 +49,13 @@
   --mb-2-5: 2.5rem;
   --mb-3: 3rem;
 
-  /*========== z index ==========*/
+  
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
 }
 
-/* Font size for large devices */
+
 @media screen and (min-width: 968px) {
   :root {
     --big-font-size: 3rem;
@@ -69,7 +68,7 @@
   }
 }
 
-/*========== Variables Dark theme ==========*/
+
 body.dark-theme {
   /* HSL color mode */
   --first-color-second: hsl(var(--hue-color), 30%, 8%);
@@ -83,7 +82,7 @@ body.dark-theme {
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 }
 
-/*========== Button Dark/Light ==========*/
+
 .nav__btns {
   display: flex;
   align-items: center;
@@ -100,7 +99,7 @@ body.dark-theme {
   color: var(--first-color);
 }
 
-/*==================== BASE ====================*/
+
 
 * {
   box-sizing: border-box;
@@ -141,7 +140,7 @@ img {
   height: auto;
 }
 
-/*==================== REUSABLE CSS CLASSES ====================*/
+
 .section {
   padding: 2rem 0 4rem;
   margin-bottom: 40px;
@@ -162,7 +161,7 @@ img {
   text-align: center;
 }
 
-/*==================== LAYOUT ====================*/
+
 
 .container {
   max-width: 768px;
@@ -184,7 +183,7 @@ img {
   background-color: var(--body-color);
 }
 
-/*==================== NAV ====================*/
+
 .nav {
   max-width: 968px;
   height: var(--header-height);
@@ -260,22 +259,22 @@ img {
   color: var(--first-color-alt);
 }
 
-/* show menu */
+
 .show-menu {
   bottom: 0;
 }
 
-/* Active link */
+
 .active-link {
   color: var(--first-color);
 }
 
-/* Change background header */
+
 .scroll-header {
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }
 
-/*==================== HOME ====================*/
+
 
 .home__container {
   gap: 1rem;
@@ -358,7 +357,7 @@ img {
 .home__scroll-arrow {
   font-size: 1.25rem;
 }
-/*==================== BUTTONS ====================*/
+
 
 .button {
   display: inline-block;
@@ -409,7 +408,7 @@ img {
   color: var(--first-color-alt);
 }
 
-/*==================== ABOUT ====================*/
+
 .about__img {
   width: 200px;
   border-radius: 0.5rem;
@@ -449,7 +448,7 @@ img {
   justify-content: center;
 }
 
-/*==================== SKILLS ====================*/
+
 
 .skills__container {
   row-gap: 0;
@@ -623,7 +622,7 @@ img {
   transform: rotate(-180deg);
 }
 
-/*==================== QUALIFICATION ====================*/
+
 .qualification__tabs {
   display: flex;
   justify-content: space-evenly;
@@ -696,7 +695,7 @@ img {
   color: var(--first-color);
 }
 
-/*==================== SERVICES ====================*/
+
 .services__container {
   gap: 1.5rem;
   grid-template-columns: repeat(2, 1fr);
@@ -795,7 +794,7 @@ img {
   visibility: visible;
 }
 
-/*==================== PORTFOLIO ====================*/
+
 .portfolio__container {
   overflow: initial;
 }
@@ -854,7 +853,7 @@ img {
 .swiper-pagination-bullet {
   outline: none;
 }
-/*==================== PROJECT IN MIND ====================*/
+
 .project {
   text-align: center;
 }
@@ -883,7 +882,7 @@ img {
   justify-self: center;
 }
 
-/*==================== TESTIMONIAL ====================*/
+
 .testimonial__data,
 .testimonial__header {
   display: flex;
@@ -923,7 +922,7 @@ img {
   bottom: 0;
 }
 
-/*==================== CONTACT ME ====================*/
+
 .contact__container {
   row-gap: 3rem;
 }
@@ -971,7 +970,7 @@ img {
   padding: 0.25rem 0.5rem 0.5rem 0;
 }
 
-/*==================== FOOTER ====================*/
+
 .footer {
   padding-top: 2rem;
 }
@@ -1027,7 +1026,7 @@ img {
   color: #fff;
 }
 
-/*========== SCROLL UP ==========*/
+
 .scrollup {
   position: fixed;
   right: 1rem;
